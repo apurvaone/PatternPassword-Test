@@ -10,10 +10,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
         android:text="Welcome to ApurVerse"
-        android:textSize="20dp"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textSize="45dp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="334dp" />
 

@@ -29,10 +29,12 @@ class InputPasswordActivity : AppCompatActivity() {
             override fun onComplete(pattern: List<Dot>) {
                 // if drawn pattern is equal to created pattern you will navigate to home screen
                 if (password == PatternLockUtils.patternToString(mPatternLockView, pattern)) {
+                    mPatternLockView!!.setViewMode(PatternLockView.PatternViewMode.CORRECT)
                     val intent = Intent(applicationContext, ProgramActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {
+                    mPatternLockView!!.setViewMode(PatternLockView.PatternViewMode.WRONG)
                     // other wise you will get error wrong password
                     Toast.makeText(this@InputPasswordActivity, "Wrong Password", Toast.LENGTH_SHORT)
                         .show()
