@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PatternPassword">
         <activity
+            android:name=".ProgramActivity"
+            android:exported="true" />
+        <activity
             android:name=".InputPasswordActivity"
             android:exported="true" />
         <activity
